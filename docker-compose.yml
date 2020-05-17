@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+    reverse:
+        build: reverse
+        ports:
+        - "80:80"
+        depends_on:
+        - service
+    service:
+        build: service
